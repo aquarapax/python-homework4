@@ -16,7 +16,7 @@ class ComplexNumber:
             # Вычисляем радиус и угол (аргумент) из алгебраической формы
             self.r = math.sqrt(real**2 + imaginary**2)  # Радиус
             self.theta = math.atan2(imaginary, real)  # Угол
-
+   
     # Метод для перегрузки оператора сложения
     def __add__(self, other):
         # Возвращаем новое комплексное число, сложив действительные и мнимые части
@@ -56,9 +56,9 @@ class ComplexNumber:
         return f"r = {self.r}, θ sigma= {self.theta} (radians)"
 
     # Метод для строкового представления объекта
-    def __str__(self):
-        # При выводе объекта будет показана алгебраическая форма
-        return self.algebraic()
+    # def __str__(self):
+    #     # При выводе объекта будет показана алгебраическая форма
+    #     return self.algebraic()
 
 # Пример использования класса
 if __name__ == "__main__":
